@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+  color: #333;
+  direction: rtl; /* תמיכה בכיווניות מימין לשמאל */
+}
+
+h1 {
+  color: #4CAF50;
+  margin-top: 20px;
+}
+
+#question {
+  font-size: 24px;
+  margin: 20px;
+  text-align: right; /* יישור לימין */
+}
+
+.option {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.option:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+}
+
+.correct {
+  background-color: lightgreen;
+}
+
+.wrong {
+  background-color: lightcoral;
+}
+
+#feedback {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: right; /* יישור לימין */
+}
+
+#player-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#back-to-menu {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#back-to-menu:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}

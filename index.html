@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>משחק לוח כפל</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>משחק לוח הכפל</h1>
+<div id="difficulty">
+  <button onclick="startGame(100)">כפולות עד 100</button>
+  <button onclick="startGame(1000)">כפולות עד 1000</button>
+</div>
+<div id="question" style="display: none;">...</div>
+<div id="options" style="display: none;"></div>
+<div id="feedback"></div>
+<button id="back-to-menu" style="display: none;" onclick="backToMenu()">חזור למסך הראשי</button>
+
+<div id="player-stats" style="display: none;">
+    <div>דיוק: <span id="accuracy">100%</span></div>
+    <div>רמת קושי: <span id="current-level">מתחיל</span></div>
+</div>
+
+<audio id="correctSound" src="correct.mp3"></audio>
+<audio id="wrongSound" src="wrong.mp3"></audio>
+
+<script src="game.js"></script>
+</body>
+</html>
